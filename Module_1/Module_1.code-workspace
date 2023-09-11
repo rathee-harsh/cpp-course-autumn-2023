@@ -51,6 +51,9 @@
             "stdexcept": "cpp",
             "streambuf": "cpp",
             "typeinfo": "cpp"
+        },
+        "files.watcherExclude": {
+            "**/target": true
         }
     }
 }
