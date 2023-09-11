@@ -27,9 +27,9 @@ void Printer(std::vector<std::string>& names) {
 
 void CMDReader() {
   std::vector<std::string> names;
+  std::cout << "Commands: ADD, PRINT, REMOVE, QUIT" << std::endl;
   while (true) {
-    std::cout << "Commands: ADD, PRINT, REMOVE, QUIT" << std::endl
-              << "Enter a command:" << std::endl;
+    std::cout << "Enter a command:" << std::endl;
     std::string command;
     std::cin >> command;
     if (command == "ADD") {
