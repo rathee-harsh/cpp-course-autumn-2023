@@ -1,0 +1,4 @@
+# ninja log v5
+0	196	1694461627295193226	CMakeFiles/bank_account.dir/src/main.cpp.o	57b1d72031ed0358
+0	160	1694461691534851829	CMakeFiles/bank_account.dir/src/bank_account.cpp.o	9519124f35fa260f
+161	211	1694461691586851550	bank_account	416608d108e902e4
