@@ -1,0 +1,3 @@
+/home/harsh/Desktop/cpp/Module_2/T2_3_Simple_class/build/CMakeFiles/simple_class.dir
+/home/harsh/Desktop/cpp/Module_2/T2_3_Simple_class/build/CMakeFiles/edit_cache.dir
+/home/harsh/Desktop/cpp/Module_2/T2_3_Simple_class/build/CMakeFiles/rebuild_cache.dir
