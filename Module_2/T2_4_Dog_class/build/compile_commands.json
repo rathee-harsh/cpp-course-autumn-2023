@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/. -I/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/dog_class.dir/src/dog_class.cpp.o -c /home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src/dog_class.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src/dog_class.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/. -I/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/dog_class.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_2/T2_4_Dog_class/src/main.cpp"
+}
+]

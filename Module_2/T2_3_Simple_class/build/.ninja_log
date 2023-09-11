@@ -1,4 +1,4 @@
 # ninja log v5
 0	130	1694460524963700449	CMakeFiles/simple_class.dir/src/person.cpp.o	b4bc4e2f0bde89e9
-0	187	1694460525023700062	CMakeFiles/simple_class.dir/src/main.cpp.o	f0a1bee5c000da3c
 187	228	1694460525063699803	simple_class	f8c021323ad52a01
+0	187	1694460525023700062	CMakeFiles/simple_class.dir/src/main.cpp.o	f0a1bee5c000da3c

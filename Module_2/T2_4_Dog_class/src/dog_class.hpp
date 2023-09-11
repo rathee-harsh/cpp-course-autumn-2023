@@ -8,17 +8,18 @@
  *
  */
 class Dog {
-  
+ public:
   Dog(int age, std::string name);
 
   void SetAge(int age);
   int GetAge();
+
   void SetName(std::string name);
   std::string GetName();
 
  private:
   int age_;
   std::string name_;
-} 
+};
 
 #endif
