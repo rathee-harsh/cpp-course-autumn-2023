@@ -1,0 +1,5 @@
+# ninja log v5
+0	3	0	clean	a31eedcededa8236
+0	181	1694457228555207984	CMakeFiles/rectangle.dir/src/main.cpp.o	f289e31d4028a4d8
+1	183	1694457228559207943	CMakeFiles/rectangle.dir/src/rectangle.cpp.o	900f7e4855a0194d
+183	229	1694457228603207496	rectangle	653458a0efada6ef
