@@ -1,0 +1,3 @@
+/home/harsh/Desktop/cpp/Module_2/T2_6_Vectors/build/CMakeFiles/vectors.dir
+/home/harsh/Desktop/cpp/Module_2/T2_6_Vectors/build/CMakeFiles/edit_cache.dir
+/home/harsh/Desktop/cpp/Module_2/T2_6_Vectors/build/CMakeFiles/rebuild_cache.dir

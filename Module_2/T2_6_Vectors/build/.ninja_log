@@ -1,0 +1,4 @@
+# ninja log v5
+1	63	1694462608365590248	CMakeFiles/vectors.dir/src/vector.cpp.o	da355157ed6619a8
+0	238	1694462608537589224	CMakeFiles/vectors.dir/src/main.cpp.o	b3220c3765cb99e5
+238	283	1694462608581588963	vectors	39442e0da29a51fd
