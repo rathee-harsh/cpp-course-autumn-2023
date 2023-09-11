@@ -19,12 +19,17 @@ void Remover(std::vector<std::string>& names) {
   std::cout << "Removing the last element:" << std::endl << name << std::endl;
 }
 
-void Printer(std::vector<std::string>& names) {}
+void Printer(std::vector<std::string>& names) {
+  for (unsigned int i = 0; i < names.size(); i++) {
+    std::cout << names[i] << std::endl;
+  }
+}
 
 void CMDReader() {
   std::vector<std::string> names;
   while (true) {
-    std::cout << "Commands: ADD, PRINT, REMOVE, QUIT" << std::endl;
+    std::cout << "Commands: ADD, PRINT, REMOVE, QUIT" << std::endl
+              << "Enter a command:" << std::endl;
     std::string command;
     std::cin >> command;
     if (command == "ADD") {
