@@ -39,8 +39,7 @@ void Book::Restore() {
 
 void Book::Print() const {
   std::cout << "Book: " << name_ << ", author: " << author_
-            << ", ISBN: " << isbn_
-            << ", loaned: " << (loaned_ ? "true" : "false")
-            << ", due date: " << due_date_.day << "." << due_date_.month << "."
-            << due_date_.year << std::endl;
+            << ", ISBN: " << isbn_ << ", loaned "
+            << (loaned_ ? "true" : "false") << ", due date: " << due_date_.day
+            << "." << due_date_.month << "." << due_date_.year << std::endl;
 }
