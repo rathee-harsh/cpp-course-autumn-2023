@@ -37,6 +37,7 @@ Matrix Rotate90Deg(const Matrix &m) {
   for (std::vector<std::vector<int>>::size_type i = 0; i < m.size(); i++) {
     std::reverse(r[i].begin(), r[i].end());
   }
+  return r;
 }
 
 void Print(const Matrix &m) {
