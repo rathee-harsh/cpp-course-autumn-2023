@@ -27,7 +27,7 @@ void PrintSum2(const std::vector<int>& v) {
   std::vector<int>::const_iterator b_it, e_it;
   b_it = v.begin();
   e_it = v.end() - 1;
-  while (b_it <= e_it) {
+  while (b_it < e_it) {
     std::cout << *b_it + *e_it << " ";
     b_it++;
     e_it--;
