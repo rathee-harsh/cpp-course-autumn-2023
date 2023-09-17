@@ -12,7 +12,7 @@ std::istream& GetLines(std::istream& is, std::list<std::string>& list) {
     std::string line_str(line);
     list.push_back(line_str);
   }
-  if (list.back() == "\n") {
+  if (list.size() != 0 && list.back() == "\n") {
     list.pop_back();
   }
   return is;

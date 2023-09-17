@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_2_List/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/. -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/list.dir/src/list.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_2_List/src/list.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_2_List/src/list.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_2_List/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/. -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/list.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_2_List/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_2_List/src/main.cpp"
+}
+]

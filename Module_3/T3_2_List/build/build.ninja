@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: vector_iterators
+# Project: list
 # Configurations: Debug
 # =============================================================================
 
@@ -39,52 +39,52 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build/
+cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_3/T3_2_List/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target vector_iterators
+# Object build statements for EXECUTABLE target list
 
 
 #############################################
-# Order-only phony target for vector_iterators
+# Order-only phony target for list
 
-build cmake_object_order_depends_target_vector_iterators: phony || CMakeFiles/vector_iterators.dir
+build cmake_object_order_depends_target_list: phony || CMakeFiles/list.dir
 
-build CMakeFiles/vector_iterators.dir/src/main.cpp.o: CXX_COMPILER__vector_iterators_Debug /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/src/main.cpp || cmake_object_order_depends_target_vector_iterators
-  DEP_FILE = CMakeFiles/vector_iterators.dir/src/main.cpp.o.d
+build CMakeFiles/list.dir/src/list.cpp.o: CXX_COMPILER__list_Debug /home/harsh/Desktop/cpp/Module_3/T3_2_List/src/list.cpp || cmake_object_order_depends_target_list
+  DEP_FILE = CMakeFiles/list.dir/src/list.cpp.o.d
   FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/. -I/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/src
-  OBJECT_DIR = CMakeFiles/vector_iterators.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector_iterators.dir/src
+  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/. -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/src
+  OBJECT_DIR = CMakeFiles/list.dir
+  OBJECT_FILE_DIR = CMakeFiles/list.dir/src
 
-build CMakeFiles/vector_iterators.dir/src/vector_it.cpp.o: CXX_COMPILER__vector_iterators_Debug /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/src/vector_it.cpp || cmake_object_order_depends_target_vector_iterators
-  DEP_FILE = CMakeFiles/vector_iterators.dir/src/vector_it.cpp.o.d
+build CMakeFiles/list.dir/src/main.cpp.o: CXX_COMPILER__list_Debug /home/harsh/Desktop/cpp/Module_3/T3_2_List/src/main.cpp || cmake_object_order_depends_target_list
+  DEP_FILE = CMakeFiles/list.dir/src/main.cpp.o.d
   FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/. -I/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/src
-  OBJECT_DIR = CMakeFiles/vector_iterators.dir
-  OBJECT_FILE_DIR = CMakeFiles/vector_iterators.dir/src
+  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/. -I/home/harsh/Desktop/cpp/Module_3/T3_2_List/src
+  OBJECT_DIR = CMakeFiles/list.dir
+  OBJECT_FILE_DIR = CMakeFiles/list.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target vector_iterators
+# Link build statements for EXECUTABLE target list
 
 
 #############################################
-# Link the executable vector_iterators
+# Link the executable list
 
-build vector_iterators: CXX_EXECUTABLE_LINKER__vector_iterators_Debug CMakeFiles/vector_iterators.dir/src/main.cpp.o CMakeFiles/vector_iterators.dir/src/vector_it.cpp.o
+build list: CXX_EXECUTABLE_LINKER__list_Debug CMakeFiles/list.dir/src/list.cpp.o CMakeFiles/list.dir/src/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/vector_iterators.dir
+  OBJECT_DIR = CMakeFiles/list.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = vector_iterators
-  TARGET_PDB = vector_iterators.dbg
+  TARGET_FILE = list
+  TARGET_PDB = list.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_2_List/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -95,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators -B/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_2_List/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_3/T3_2_List -B/home/harsh/Desktop/cpp/Module_3/T3_2_List/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -111,9 +111,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build
+# Folder: /home/harsh/Desktop/cpp/Module_3/T3_2_List/build
 
-build all: phony vector_iterators
+build all: phony list
 
 # =============================================================================
 # Built-in targets

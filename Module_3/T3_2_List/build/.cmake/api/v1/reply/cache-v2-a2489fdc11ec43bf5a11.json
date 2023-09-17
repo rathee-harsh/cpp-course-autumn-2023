@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build"
+			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_2_List/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -139,10 +139,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -267,10 +267,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc"
 		},
 		{
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators"
+			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_2_List"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "vector_iterators"
+			"value" : "list"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1162,7 +1162,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "vector_iterators_BINARY_DIR",
+			"name" : "list_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1171,10 +1171,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators/build"
+			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_2_List/build"
 		},
 		{
-			"name" : "vector_iterators_IS_TOP_LEVEL",
+			"name" : "list_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1186,7 +1186,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "vector_iterators_SOURCE_DIR",
+			"name" : "list_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1195,7 +1195,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_1_Vector_iterators"
+			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_2_List"
 		}
 	],
 	"kind" : "cache",
