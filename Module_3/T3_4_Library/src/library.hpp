@@ -14,8 +14,7 @@ class Library {
    *
    * \param name the library's name (const reference to string)
    */
-  
-
+  Library(const std::string& name);
   /**
    * \brief Get the library's name as a string, takes no parameters.
    *
@@ -26,8 +25,7 @@ class Library {
    *
    * \return std::string
    */
-  
-
+  std::string GetName() const;
   /**
    * \brief Get the Library's books as a reference to a vector<Book>, takes no
    * parameters.
@@ -36,8 +34,7 @@ class Library {
    *
    * \return std::vector<Book>&
    */
-  
-
+  std::vector<Book>& GetBooks();
   /**
    * \brief Get the Library's customers as a reference to a vector<Customer>,
    * takes no parameters.
@@ -46,8 +43,7 @@ class Library {
    *
    * \return std::vector<Customer>&
    */
-  
-
+  std::vector<Customer>& GetCustomers();
   /**
    * \brief Searches for a book by its name.
    *
@@ -59,8 +55,7 @@ class Library {
    * not found, a new book with an empty strings as parameters for the name,
    * author and isbn is returned.
    */
-  
-
+  Book FindBookByName(const std::string& name);
   /**
    * \brief Searches for books by their author.
    *
@@ -71,8 +66,7 @@ class Library {
    * \return a vector of Books with the specified author. If no books are found,
    * an empty vector is returned.
    */
-  
-
+  std::vector<Book> FindBooksByAuthor(const std::string& name);
   /**
    * \brief Returns  a vector of loaned Books, takes no parameters.
    *
@@ -81,8 +75,7 @@ class Library {
    * \return a vector of loaned Books. If no books are found,
    * an empty vector is returned.
    */
-  
-
+  std::vector<Book> FindAllLoanedBooks();
   /**
    * \brief Searches for a customer with specfied id
    *
@@ -93,7 +86,7 @@ class Library {
    * \return A copy of the found customer. if a Customer is not found, a new
    * Customer with empty name and id is returned.
    */
-  
+  Customer FindCustomer(const std::string id);
 
  private:
   /* Member variables:
@@ -101,7 +94,9 @@ class Library {
    * books (vector<Book>)
    * customers (vector<Customer>)
    */
-  
+  std::string name_;
+  std::vector<Book> books_;
+  std::vector<Customer> customers_;
 };
 
 #endif

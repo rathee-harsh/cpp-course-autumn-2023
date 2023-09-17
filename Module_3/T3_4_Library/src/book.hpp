@@ -13,6 +13,12 @@ struct Date {
   int month; /** The month of the date*/
   int year;  /** The year of the date*/
 
+  Date(int d = 0, int m = 0, int y = 0) {
+    day = d;
+    month = m;
+    year = y;
+  }
+
   /**
    * \brief Constructs a Date after setting its date field to local calendar
    * date of the computer.
@@ -48,68 +54,72 @@ class Book {
    * \param due_date due date as a Date structure (Date), which is by default
    *                  0-0-0
    */
-  
+  Book(const std::string& name, const std::string& author,
+       const std::string& isbn, bool loaned = false, Date due_date = Date());
 
   /**
    * \brief Get the Name of the book. It has no parameters.
    *
-   * This function should not alter the Book object's state, in other words the
-   * function should be const.
+   * This function should not alter the Book object's state, in other words
+   * the function should be const.
    *
    * Function identifier: GetName
    *
    * \return the Book's name as a std::string
    */
-  
+
+  std::string GetName() const;
 
   /**
    * \brief Get the Book's author as a string, takes no parameters.
    *
-   * This function should not alter the Book object's state, in other words the
-   * function should be const.
+   * This function should not alter the Book object's state, in other words
+   * the function should be const.
    *
    * Function identifier: GetAuthor
    *
    * \return std::string
    */
-  
+
+  std::string GetAuthor() const;
 
   /**
    * \brief Get the Book's ISBN as a string, takes no parameters.
    *
-   * This function should not alter the Book object's state, in other words the
-   * function should be const.
+   * This function should not alter the Book object's state, in other words
+   * the function should be const.
    *
    * Function identifier: GetISBN
    *
    * \return std::string
    */
-  
-
+  std::string GetISBN() const;
   /**
    * \brief Get the Book's status as a bool, takes no parameters.
    *
-   * This function should not alter the Book object's state, in other words the
-   * function should be const.
+   * This function should not alter the Book object's state, in other words
+   * the function should be const.
    *
    * Function identifier: GetStatus
    *
    * \return true if the book is loaned
    * \return false otherwise
    */
-  
+
+  bool GetStatus() const;
 
   /**
    * \brief Get the Book's due date, takes no parameters.
    *
-   * This function should not alter the Book object's state, in other words the
-   * function should be const.
+   * This function should not alter the Book object's state, in other words
+   * the function should be const.
    *
    * Function identifier: GetDueDate
    *
    * \return Date
    */
-  
+
+  Date GetDueDate() const;
 
   /**
    * \brief Loans the book
@@ -129,7 +139,8 @@ class Book {
    * \return true if loaning is successful
    * \return false otherwise.
    */
-  
+
+  bool Loan();
 
   /**
    * \brief Restores the book status to not loaned
@@ -140,8 +151,7 @@ class Book {
    *
    * Function identifier: Restore
    */
-  
-
+  void Restore();
   /**
    * \brief Prints the book's information to the standard output stream.
    *
@@ -158,7 +168,7 @@ class Book {
    *
    * Function identifier: Print
    */
-  
+  void Print() const;
 
  private:
   std::string name_;
