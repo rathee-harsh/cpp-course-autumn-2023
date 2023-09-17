@@ -37,3 +37,13 @@ std::vector<Book> Library::FindAllLoanedBooks() {
   }
   return books;
 }
+
+Customer Library::FindCustomer(const std::string& id) {
+  for (auto customer : customers_) {
+    if (customer.GetID() == id) {
+      return customer;
+    }
+  }
+  Customer c = Customer("", "");
+  return c;
+}
