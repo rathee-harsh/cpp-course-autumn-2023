@@ -20,9 +20,8 @@ std::istream& GetLines(std::istream& is, std::list<std::string>& list) {
 
 void Print(const std::list<std::string>& list) {
   for (auto line : list) {
-    std::cout << line;
+    std::cout << line << std::endl;
   }
-  std::cout << std::endl;
 }
 
 void SortAndUnique(std::list<std::string>& list) {
