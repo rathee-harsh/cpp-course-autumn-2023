@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/book.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/book.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/book.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/customer.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/customer.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/customer.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/library.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/library.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/library.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/library.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/main.cpp"
+}
+]
