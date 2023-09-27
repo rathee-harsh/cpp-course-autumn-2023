@@ -10,6 +10,10 @@ GeomVector operator*(double a, const GeomVector& b) {
   return GeomVector(a * b.x_, a * b.y_, a * b.z_);
 }
 
+GeomVector operator/(const GeomVector& b, double a) {
+  return GeomVector(b.x_ / a, b.y_ / a, b.z_ / a);
+}
+
 std::ostream& operator<<(std::ostream& out, const GeomVector& a) {
   out << "(" << a.x_ << ", " << a.y_ << ", " << a.z_ << ")";
   return out;
