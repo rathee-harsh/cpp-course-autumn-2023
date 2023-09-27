@@ -19,7 +19,7 @@ bool GeomVector::operator<(const GeomVector& a) {
   return this->Length() < a.Length();
 }
 
-bool GeomVector::operator<(const GeomVector& a) {
+bool GeomVector::operator>(const GeomVector& a) {
   return this->Length() > a.Length();
 }
 
