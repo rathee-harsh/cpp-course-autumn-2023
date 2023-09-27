@@ -20,7 +20,7 @@
  */
 class Cat : public Mammal {
  public:
-  Cat(const std::string& name, double weight) : name_(name), Mammal(weight) {}
+  Cat(const std::string& name, double weight) : Mammal(weight), name_(name) {}
   const std::string& GetName() const;
   static std::string MakeSound();
 
