@@ -11,7 +11,9 @@
  * main function.
  */
 class Dragon : public Creature {
-  
+ public:
+  Dragon(const std::string& name, int hitpoints)
+      : Creature(name, "Dragon", hitpoints) {}
 };
 
 #endif
