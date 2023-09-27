@@ -25,9 +25,12 @@ class GeomVector {
    * object and the object given as an argument.
    */
   GeomVector operator+(const GeomVector& a);
+  bool operator<(const GeomVector& a);
+  bool operator>(const GeomVector& a);
+  bool operator==(const GeomVector& a);
+  bool operator!=(const GeomVector& a);
 
   // Define the remaining operators here
-  
 
   /**
    * \brief Overload operator for the scalar multiplication of a GeomVector
@@ -42,6 +45,7 @@ class GeomVector {
    * \return the scalar multiplied vector as a new GeomVector object.
    */
   friend GeomVector operator*(double a, const GeomVector& b);
+  friend GeomVector operator/(const GeomVector& b, double a);
 
   /**
    * \brief Overload operator for printing the components of the vector to the
