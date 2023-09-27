@@ -1,0 +1,72 @@
+{
+    "folders": [
+        {
+            "name": "T4.1 Mammals",
+            "path": "T4_1_Mammals"
+        },
+        {
+            "name": "T4.2 Trolls and dragons",
+            "path": "T4_2_Trolls_and_dragons"
+        },
+        {
+            "name": "T4.3 Overload operators",
+            "path": "T4_3_Overload_operators"
+        },
+        {
+            "name": "T4.4 Birds",
+            "path": "T4_4_Birds"
+        },
+        {
+            "name": "T4.5 Dragons",
+            "path": "T4_5_Dragons"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "array": "cpp",
+            "atomic": "cpp",
+            "bit": "cpp",
+            "*.tcc": "cpp",
+            "cctype": "cpp",
+            "clocale": "cpp",
+            "cmath": "cpp",
+            "compare": "cpp",
+            "concepts": "cpp",
+            "cstdarg": "cpp",
+            "cstddef": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cwchar": "cpp",
+            "cwctype": "cpp",
+            "deque": "cpp",
+            "string": "cpp",
+            "unordered_map": "cpp",
+            "vector": "cpp",
+            "exception": "cpp",
+            "algorithm": "cpp",
+            "functional": "cpp",
+            "iterator": "cpp",
+            "memory": "cpp",
+            "memory_resource": "cpp",
+            "numeric": "cpp",
+            "random": "cpp",
+            "string_view": "cpp",
+            "system_error": "cpp",
+            "tuple": "cpp",
+            "type_traits": "cpp",
+            "utility": "cpp",
+            "initializer_list": "cpp",
+            "iosfwd": "cpp",
+            "iostream": "cpp",
+            "istream": "cpp",
+            "limits": "cpp",
+            "new": "cpp",
+            "numbers": "cpp",
+            "ostream": "cpp",
+            "stdexcept": "cpp",
+            "streambuf": "cpp",
+            "typeinfo": "cpp"
+        }
+    }
+}

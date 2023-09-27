@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/cat.cpp.o -c /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/cat.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/cat.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/dog.cpp.o -c /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/dog.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/dog.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/main.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/mammals.dir/src/mammal.cpp.o -c /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/mammal.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/mammal.cpp"
+}
+]
