@@ -2,6 +2,9 @@
 #define AALTO_ELEC_CPP_AVIARY_CLASS
 
 #include <iostream>
+#include <iterator>
+#include <list>
+#include <stdexcept>
 
 #include "bird.hpp"
 
@@ -25,7 +28,7 @@ class Aviary {
    * \param bird A pointer to a bird object.
    * \return nothing
    */
-  
+  void Add(Bird* bird);
   /**
    * \brief TODO: method SpeakAll calls the Speak method with the given
    * parameter on all birds in the aviary.
@@ -35,7 +38,7 @@ class Aviary {
    * \param os A reference to the desired ostream.
    * \return nothing
    */
-  
+  void SpeakAll(std::ostream& os) const;
   /**
    * \brief TODO: method Size returns the number of birds in the aviary.
    *
@@ -44,16 +47,17 @@ class Aviary {
    *
    * \return How many birds there are in the aviary.
    */
-  
+  unsigned int Size() const { return birds_.size(); }
   /**
    * \brief TODO: non-const version of the indexing operator [].
    *
-   * If the index is out of bounds, you can optionally throw std::out_of_range exception. 
+   * If the index is out of bounds, you can optionally throw std::out_of_range
+   * exception.
    *
    * \param idx desired index as an size_t integer value.
    * \return A pointer to the bird (Bird*) at the index given as an argument
    */
-  
+  Bird* operator[](size_t idx);
   /**
    * \brief TODO: const version of the indexing operator [].
    *
@@ -63,15 +67,20 @@ class Aviary {
    * \return A pointer to the bird (const Bird*) at the index given as an
    * argument
    */
-  
+  const Bird* operator[](size_t idx) const;
   /**
    * \brief TODO: destructor. Takes no parameters.
    *
    * \return nothing
    */
-   private:
-  // TODO: declare the required members
-  
+  ~Aviary();
+
+ private:
+  std::list<Bird*> birds_;
+
+ private:
+  Aviary(const Aviary& a);
+  Aviary& operator=(const Aviary& a);
 };
 
 #endif

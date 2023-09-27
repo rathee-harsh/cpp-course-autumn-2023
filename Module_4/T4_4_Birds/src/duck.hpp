@@ -14,6 +14,12 @@
  * implemented in this header file.
  */
 
-
+class Duck : public Bird {
+ public:
+  Duck(const std::string& name) : Bird(name) {}
+  virtual void Speak(std::ostream& os) const {
+    os << GetName() << ": QUACK" << std::endl;
+  }
+};
 
 #endif
