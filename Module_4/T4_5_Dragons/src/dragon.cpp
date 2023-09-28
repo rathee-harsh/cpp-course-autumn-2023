@@ -15,3 +15,13 @@
 //     delete it;
 //   }
 // }
+
+std::ostream& operator<<(std::ostream& os, const Dragon& dragon) {
+  os << "Dragon named: " << dragon.name_ << ", age: " << dragon.age_
+     << ", size: " << dragon.size_ << std::endl
+     << "Treasures:" << std::endl;
+  for (auto it : dragon.treasures_) {
+    os << it.name << std::endl;
+  }
+  return os;
+}

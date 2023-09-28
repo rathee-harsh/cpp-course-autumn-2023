@@ -63,16 +63,7 @@ class DragonCave {
  * but DOES NOT delete the Dragon object. The function returns nothing.
  */
 
-std::ostream& operator<<(std::ostream& os, const DragonCave& cave) {
-  os << "DragonCave dwellers:" << std::endl << std::endl;
-  for (auto it = cave.dragons_.begin(); it != cave.dragons_.end(); it++) {
-    os << *it;
-    if (std::next(it) != cave.dragons_.end()) {
-      os << std::endl;
-    }
-  }
-  return os;
-}
+std::ostream& operator<<(std::ostream& os, const DragonCave& cave);
 
 /**
  * \brief TODO: operator << overloads the << stream operator for printing
