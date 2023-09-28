@@ -1,5 +1,5 @@
 #pragma once
-#include <dragon.cpp>
+#include <dragon.hpp>
 #include <list>
 class DragonCave {
  public:
