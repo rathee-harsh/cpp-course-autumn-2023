@@ -71,6 +71,7 @@ std::ostream& operator<<(std::ostream& os, const DragonCave& cave) {
       os << std::endl;
     }
   }
+  return os;
 }
 
 /**
