@@ -12,6 +12,7 @@ class MagicDragon : public Dragon {
       if (it->type == Herbs) {
         std::cout << "Magic dragon ate: " << it->name << std::endl;
         it = items.erase(it);
+        it--;
         size_ += 1;
       }
     }
@@ -23,6 +24,7 @@ class MagicDragon : public Dragon {
         treasures_.push_back(*it);
         std::cout << "Magic dragon received: " << it->name << std::endl;
         it = items.erase(it);
+        it--;
       }
     }
   }
