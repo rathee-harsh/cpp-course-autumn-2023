@@ -28,7 +28,7 @@ class Dragon {
       : name_(name), age_(age), size_(size) {}
   //   Dragon(const Dragon&);
   //   Dragon& operator=(const Dragon&);
-  virtual ~Dragon();
+  virtual ~Dragon() {}
   const std::string& GetName() const { return name_; }
   size_t GetAge() const { return age_; }
   size_t GetSize() const { return size_; }
