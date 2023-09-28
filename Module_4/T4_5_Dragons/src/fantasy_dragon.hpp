@@ -2,6 +2,32 @@
 
 #include "dragon.hpp"
 
+class FantasyDragon : public Dragon {
+ public:
+  FantasyDragon(const std::string& name, size_t age, size_t size)
+      : Dragon(name, age, size) {}
+
+  virtual void Eat(std::list<Food>& items) {
+    for (auto it = items.begin(); it != items.end(); it++) {
+      if (it->type == PeopleFood || it->type == People) {
+        std::cout << "Fantasy dragon ate: " << it->name << std::endl;
+        it = items.erase(it);
+        size_ += 1;
+      }
+    }
+  }
+
+  virtual void Hoard(std::list<Treasure>& items) {
+    for (auto it = items.begin(); it != items.end(); it++) {
+      if (it->type == Jewellery) {
+        treasures_.push_back(*it);
+        std::cout << "Fantasy dragon received: " << it->name << std::endl;
+        it = items.erase(it);
+      }
+    }
+  }
+};
+
 /**
  * \brief TODO: class FantasyDragon describes a fantasy dragon. Inherits from
  * class Dragon.
@@ -39,4 +65,3 @@ Fantasy dragon received: <Treasure's name>\n
 end.
  *
  */
-

@@ -1,5 +1,34 @@
 #pragma once
+#include <dragon.cpp>
+#include <list>
+class DragonCave {
+ public:
+  DragonCave(const DragonCave&) = delete;
+  DragonCave& operator=(const DragonCave&) = delete;
+  DragonCave() = default;
+  ~DragonCave() {
+    for (auto it : dragons_) {
+      delete it;
+    }
+  }
+  const std::list<Dragon*>& GetDragons() const { return dragons_; }
 
+  void Accommodate(Dragon* d) { dragons_.push_back(d); }
+
+  void Evict(const std::string& name) {
+    for (auto it = dragons_.begin(); it != dragons_.end(); it++) {
+      if ((*it)->GetName() == name) {
+        it = dragons_.erase(it);
+        return;
+      }
+    }
+  }
+
+  friend std::ostream& operator<<(std::ostream& os, const DragonCave& cave);
+
+ private:
+  std::list<Dragon*> dragons_;
+};
 /**
  * \brief The DragonCave class is a storage class for Dragons.
  *
@@ -34,7 +63,15 @@
  * but DOES NOT delete the Dragon object. The function returns nothing.
  */
 
-
+std::ostream& operator<<(std::ostream& os, const DragonCave& cave) {
+  os << "DragonCave dwellers:" << std::endl << std::endl;
+  for (auto it = cave.dragons_.begin(); it != cave.dragons_.end(); it++) {
+    os << *it;
+    if (std::next(it) != cave.dragons_.end()) {
+      os << std::endl;
+    }
+  }
+}
 
 /**
  * \brief TODO: operator << overloads the << stream operator for printing

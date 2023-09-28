@@ -5,35 +5,43 @@
 #include <string>
 
 /* Enumeration types for the different treasures */
-enum TreasureType
-{
-    Jewellery,
-    Wisdom,
-    Potions
-};
+enum TreasureType { Jewellery, Wisdom, Potions };
 
 /* Implementation of Treasure */
-struct Treasure
-{
-    TreasureType type;
-    std::string name;
+struct Treasure {
+  TreasureType type;
+  std::string name;
 };
 
 /* Enumeration types for the different foods */
-enum FoodType
-{
-    PeopleFood,
-    People,
-    Herbs
-};
+enum FoodType { PeopleFood, People, Herbs };
 
 /* Implementation of Food */
-struct Food
-{
-    FoodType type;
-    std::string name;
+struct Food {
+  FoodType type;
+  std::string name;
 };
 
+class Dragon {
+ public:
+  Dragon(const std::string& name, size_t age, size_t size)
+      : name_(name), age_(age), size_(size) {}
+  //   Dragon(const Dragon&);
+  //   Dragon& operator=(const Dragon&);
+  //   ~Dragon();
+  const std::string& GetName() const { return name_; }
+  size_t GetAge() const { return age_; }
+  size_t GetSize() const { return size_; }
+  const std::list<Treasure>& GetTreasures() const { return treasures_; }
+  virtual void Eat(std::list<Food>&) = 0;
+  virtual void Hoard(std::list<Treasure>&) = 0;
+  friend std::ostream& operator<<(std::ostream& os, const Dragon& dragon);
+
+ protected:
+  std::string name_;
+  size_t age_, size_;
+  std::list<Treasure> treasures_;
+};
 /**
  * \brief class Dragon is an abstract class that describes a dragon.
  *
@@ -47,7 +55,8 @@ struct Food
  * Functions:
  *
  * The constructor takes the Dragon's name (const std::string&), age (size_t)
- * and size (size_t) as a parameter and initializes them to the parameter values.
+ * and size (size_t) as a parameter and initializes them to the parameter
+ * values.
  *
  * Destructor: Think about how it should be implemented!
  *
@@ -75,7 +84,15 @@ struct Food
  *
  */
 
-
+std::ostream& operator<<(std::ostream& os, const Dragon& dragon) {
+  os << "Dragon named: " << dragon.name_ << ", age: " << dragon.age_
+     << ", size: " << dragon.size_ << std::endl
+     << "Treasures:" << std::endl;
+  for (auto it : dragon.treasures_) {
+    os << it.name << std::endl;
+  }
+  return os;
+}
 /**
  * \brief TODO: operator << overloads the << stream operator for printing
  * Dragons to a desired ostream.

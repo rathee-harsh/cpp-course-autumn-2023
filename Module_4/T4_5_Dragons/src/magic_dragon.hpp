@@ -2,6 +2,32 @@
 
 #include "dragon.hpp"
 
+class MagicDragon : public Dragon {
+ public:
+  MagicDragon(const std::string& name, size_t age, size_t size)
+      : Dragon(name, age, size) {}
+
+  virtual void Eat(std::list<Food>& items) {
+    for (auto it = items.begin(); it != items.end(); it++) {
+      if (it->type == Herbs) {
+        std::cout << "Magic dragon ate: " << it->name << std::endl;
+        it = items.erase(it);
+        size_ += 1;
+      }
+    }
+  }
+
+  virtual void Hoard(std::list<Treasure>& items) {
+    for (auto it = items.begin(); it != items.end(); it++) {
+      if (it->type == Potions) {
+        treasures_.push_back(*it);
+        std::cout << "Magic dragon received: " << it->name << std::endl;
+        it = items.erase(it);
+      }
+    }
+  }
+};
+
 /**
  * \brief class MagicDragon describes a magic dragon. Inherits from class
  * Dragon.
