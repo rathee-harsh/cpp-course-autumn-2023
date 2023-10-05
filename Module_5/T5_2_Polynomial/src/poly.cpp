@@ -108,10 +108,10 @@ std::ostream& operator<<(std::ostream& os, const Poly& p) {
       os << "+";
     }
   }
+  return os;
 }
 std::istream& operator>>(std::istream& is, Poly& p) {
   // repeat until end of file
-  Poly p;
   while (!is.eof()) {
     // read a line from file, output it to screen
     std::string line;
@@ -123,5 +123,5 @@ std::istream& operator>>(std::istream& is, Poly& p) {
     int e = stoi(exp);
     p[e] = c;
   }
-  return p;
+  return is;
 }
