@@ -1,4 +1,14 @@
 #include "register.hpp"
+
+#include <fstream>
+#include <ostream>
+#include <sstream>
+#include <string>
+#include <vector>
+
+#include "aircraft.hpp"
+#include "boat.hpp"
+#include "vehicle.hpp"
 // TODO: implement Register's members
 Register::~Register() {}
 
