@@ -63,20 +63,15 @@ Poly& Poly::operator-=(const Poly& b) {
 }
 
 Poly operator+(const Poly& a, const Poly& b) {
-  auto j = b.begin();
   Poly p;
-  for (auto i = a.begin(); i != a.end(); i++) {
-    if (j != b.end()) {
-      p[i->first] = j->second + i->second;
-      j++;
-    } else {
-      p[i->first] = i->second;
-    }
+  for (auto i = b.begin(); i != b.end(); i++) {
+    p[i->first] = 0;
   }
-  if (j != b.end()) {
-    for (auto k = j; k != b.end(); k++) {
-      p[k->first] = k->second;
-    }
+  for (auto i = a.begin(); i != a.end(); i++) {
+    p[i->first] = i->second;
+  }
+  for (auto i = b.begin(); i != b.end(); i++) {
+    p[i->first] += i->second;
   }
   return p;
 }
@@ -101,27 +96,123 @@ bool operator!=(const Poly& a, const Poly& b) {
 
 std::ostream& operator<<(std::ostream& os, const Poly& p) {
   for (auto i = p.rbegin(); i != p.rend(); i++) {
-    if (i->first != 0) {
-      os << i->first << "x" << i->second;
-    }
-    if (i != p.rend()--) {
-      os << "+";
+    if (i->second != 0) {
+      if (i->second > 0 && i != p.rbegin()) {
+        os << "+";
+      }
+      os << i->second << "x" << i->first;
     }
   }
   return os;
 }
 std::istream& operator>>(std::istream& is, Poly& p) {
-  // repeat until end of file
-  while (!is.eof()) {
-    // read a line from file, output it to screen
-    std::string line;
-    std::getline(is, line, '+');
-    int s = line.find('x');
-    std::string coe = line.substr(0, s);
-    std::string exp = line.substr(s + 1);
-    int c = stoi(coe);
-    int e = stoi(exp);
-    p[e] = c;
+  std::string l;
+  is >> l;
+  std::istringstream iss(l);
+  for (auto i = p.begin(); i != p.end(); i++) {
+    p[i->first] = 0;
+  }
+
+  std::string line;
+  while (std::getline(iss, line, '+')) {
+    int c = 0, e = 0;
+    size_t x_pos = line.find('x');
+
+    if (x_pos != std::string::npos) {
+      std::string coe_str = line.substr(0, x_pos);
+      c = (coe_str.empty()
+               ? 1
+               : stoi(
+                     coe_str));  // Default coefficient to 1 if none is provided
+      std::string exp_str = line.substr(x_pos + 1);
+      e = (exp_str.empty()
+               ? 1
+               : stoi(exp_str));  // Default exponent to 1 if none is provided
+    } else {
+      // If there's no 'x', it's a constant term (x^0)
+      c = stoi(line);
+      e = 0;
+    }
+
+    // Sum coefficients for the same exponent
+    p[e] += c;
   }
   return is;
+  // while (std::getline(iss, termStr, '+')) {
+  //   std::istringstream termStream(termStr);
+  //   std::string token;
+  //   int c, e;
+  //   while (std::getline(termStream, token, '-')) {
+  //     size_t x_pos = token.find('x');
+  //     if (x_pos != std::string::npos) {
+  //       c = std::stoi(token.substr(0, x_pos));
+  //       size_t exp_pos = x_pos + 1;
+  //       if (exp_pos < token.length() && token[exp_pos] == '-') {
+  //         e = -std::stoi(token.substr(exp_pos + 1));
+  //       } else {
+  //         e = (exp_pos < token.length()) ? std::stoi(token.substr(exp_pos)) :
+  //         1;
+  //       }
+  //     } else {
+  //       c = std::stoi(token);
+  //       e = 0;
+  //     }
+
+  //     terms.push_back(term);
+  //   }
+  // }
+  // return is;
 }
+
+// while (!is.eof()) {
+//   // read a line from file, output it to screen
+//   std::string line;
+//   std::getline(is, line, '+');
+//   int s = line.find('x');
+//   std::string coe = line.substr(0, s);
+//   std::string exp = line.substr(s + 1);
+//   int c = stoi(coe);
+//   int e = stoi(exp);
+//   p[e] = c;
+// }
+// return is;
+// }
+
+// // repeat until end of file
+//   std::string line;
+//   std::string termStr;
+//   is >> line;
+//   for (auto i = p.begin(); i != p.end(); i++) {
+//     p[i->first] = 0;
+//   }
+//   std::vector<int> found_keys;
+//   std::istringstream iss(line);
+//   while (std::getline(iss, termStr, '-')) {
+//     std::istringstream termStream(termStr);
+//     std::string token;
+
+//     while (std::getline(termStream, token, '+')) {
+//       size_t x_pos = token.find('x');
+//       int c, e;
+//       if (x_pos != std::string::npos) {
+//         c = std::stoi(token.substr(0, x_pos));
+//         size_t exp_pos = x_pos + 1;
+//         if (exp_pos < token.length() && token[exp_pos] == '-') {
+//           e = -std::stoi(token.substr(exp_pos + 1));
+//         } else {
+//           e = (exp_pos < token.length()) ? std::stoi(token.substr(exp_pos)) :
+//           1;
+//         }
+//       } else {
+//         c = std::stoi(token);
+//         e = 0;
+//       }
+//       if (std::count(found_keys.begin(), found_keys.end(), e)) {
+//         p[e] += c;
+//       } else {
+//         p[e] = c;
+//         found_keys.push_back(e);
+//       }
+//     }
+//   }
+//   return is;

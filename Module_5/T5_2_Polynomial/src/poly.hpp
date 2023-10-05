@@ -1,10 +1,11 @@
 #ifndef ELEC_AS_CPP_POLY
 #define ELEC_AS_CPP_POLY
 
+#include <algorithm>
 #include <iosfwd>
 #include <map>
 #include <string>
-
+#include <vector>
 /* Polynomial is a mathematical expression consisting of terms summed to
  * each-other. In this exercise you will implement class Poly, holding a single
  * polynomial where each term is of form <mul>x<exp>. For example, the parabola
