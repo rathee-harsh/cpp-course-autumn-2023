@@ -86,7 +86,12 @@ class RestrictedPtr {
   }
   T& GetData() { return *ptr_; }
   T* GetPointer() { return ptr_; }
-  int GetRefCount() { return *use_count_; }
+  int GetRefCount() {
+    if (use_count_ == nullptr) {
+      return 0;
+    }
+    return *use_count_;
+  }
 
  private:
   T* ptr_ = nullptr;
