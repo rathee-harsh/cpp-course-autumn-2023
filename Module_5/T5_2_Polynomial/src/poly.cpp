@@ -16,25 +16,7 @@ Poly operator-(const Poly& p) {
 }
 
 Poly& Poly::operator+=(const Poly& b) {
-  if (b.values_.size() > values_.size()) {
-    auto i = begin();
-    for (auto j = b.begin(); j != b.end(); j++) {
-      if (i != end()) {
-        values_[i->first] = i->second + j->second;
-        i++;
-      } else {
-        values_.insert({j->first, j->second});
-      }
-    }
-  } else {
-    auto i = b.begin();
-    for (auto j = begin(); j != end(); j++) {
-      if (i != end()) {
-        values_[j->first] = i->second + j->second;
-        i++;
-      }
-    }
-  }
+  *this = *this + b;
   return *this;
 }
 
