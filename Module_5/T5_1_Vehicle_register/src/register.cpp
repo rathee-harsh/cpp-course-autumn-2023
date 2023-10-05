@@ -17,7 +17,6 @@ void Register::Save(const std::string& filename) const {
   std::ofstream os(filename);
   for (auto vehicle : vehicles_) {
     (*vehicle).Write(os);
-    os << std::endl;
   }
   os.close();
 }
