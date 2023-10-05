@@ -88,7 +88,7 @@ class RestrictedPtr {
   T* GetPointer() { return ptr_; }
   int GetRefCount() {
     if (use_count_ == nullptr) {
-      return 0;
+      return 1;
     }
     return *use_count_;
   }
