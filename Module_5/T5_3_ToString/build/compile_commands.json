@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_3_ToString/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_3_ToString/. -I/home/harsh/Desktop/cpp/Module_5/T5_3_ToString/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/tostring.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_3_ToString/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_3_ToString/src/main.cpp"
+}
+]
