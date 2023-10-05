@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: library
+# Project: pokemon
 # Configurations: Debug
 # =============================================================================
 
@@ -39,66 +39,52 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_3/T3_4_Library/build/
+cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target library
+# Object build statements for EXECUTABLE target pokemon
 
 
 #############################################
-# Order-only phony target for library
+# Order-only phony target for pokemon
 
-build cmake_object_order_depends_target_library: phony || CMakeFiles/library.dir
+build cmake_object_order_depends_target_pokemon: phony || CMakeFiles/pokemon.dir
 
-build CMakeFiles/library.dir/src/book.cpp.o: CXX_COMPILER__library_Debug /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/book.cpp || cmake_object_order_depends_target_library
-  DEP_FILE = CMakeFiles/library.dir/src/book.cpp.o.d
+build CMakeFiles/pokemon.dir/src/main.cpp.o: CXX_COMPILER__pokemon_Debug /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/src/main.cpp || cmake_object_order_depends_target_pokemon
+  DEP_FILE = CMakeFiles/pokemon.dir/src/main.cpp.o.d
   FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src
-  OBJECT_DIR = CMakeFiles/library.dir
-  OBJECT_FILE_DIR = CMakeFiles/library.dir/src
+  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/. -I/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/src
+  OBJECT_DIR = CMakeFiles/pokemon.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokemon.dir/src
 
-build CMakeFiles/library.dir/src/customer.cpp.o: CXX_COMPILER__library_Debug /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/customer.cpp || cmake_object_order_depends_target_library
-  DEP_FILE = CMakeFiles/library.dir/src/customer.cpp.o.d
+build CMakeFiles/pokemon.dir/src/pokemon.cpp.o: CXX_COMPILER__pokemon_Debug /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/src/pokemon.cpp || cmake_object_order_depends_target_pokemon
+  DEP_FILE = CMakeFiles/pokemon.dir/src/pokemon.cpp.o.d
   FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src
-  OBJECT_DIR = CMakeFiles/library.dir
-  OBJECT_FILE_DIR = CMakeFiles/library.dir/src
-
-build CMakeFiles/library.dir/src/library.cpp.o: CXX_COMPILER__library_Debug /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/library.cpp || cmake_object_order_depends_target_library
-  DEP_FILE = CMakeFiles/library.dir/src/library.cpp.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src
-  OBJECT_DIR = CMakeFiles/library.dir
-  OBJECT_FILE_DIR = CMakeFiles/library.dir/src
-
-build CMakeFiles/library.dir/src/main.cpp.o: CXX_COMPILER__library_Debug /home/harsh/Desktop/cpp/Module_3/T3_4_Library/src/main.cpp || cmake_object_order_depends_target_library
-  DEP_FILE = CMakeFiles/library.dir/src/main.cpp.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/. -I/home/harsh/Desktop/cpp/Module_3/T3_4_Library/src
-  OBJECT_DIR = CMakeFiles/library.dir
-  OBJECT_FILE_DIR = CMakeFiles/library.dir/src
+  INCLUDES = -I/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/. -I/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/src
+  OBJECT_DIR = CMakeFiles/pokemon.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokemon.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target library
+# Link build statements for EXECUTABLE target pokemon
 
 
 #############################################
-# Link the executable library
+# Link the executable pokemon
 
-build library: CXX_EXECUTABLE_LINKER__library_Debug CMakeFiles/library.dir/src/book.cpp.o CMakeFiles/library.dir/src/customer.cpp.o CMakeFiles/library.dir/src/library.cpp.o CMakeFiles/library.dir/src/main.cpp.o
+build pokemon: CXX_EXECUTABLE_LINKER__pokemon_Debug CMakeFiles/pokemon.dir/src/main.cpp.o CMakeFiles/pokemon.dir/src/pokemon.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/library.dir
+  OBJECT_DIR = CMakeFiles/pokemon.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = library
-  TARGET_PDB = library.dbg
+  TARGET_FILE = pokemon
+  TARGET_PDB = pokemon.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_4_Library/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -109,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_4_Library/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_3/T3_4_Library -B/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon -B/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -125,9 +111,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/harsh/Desktop/cpp/Module_3/T3_4_Library/build
+# Folder: /home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build
 
-build all: phony library
+build all: phony pokemon
 
 # =============================================================================
 # Built-in targets

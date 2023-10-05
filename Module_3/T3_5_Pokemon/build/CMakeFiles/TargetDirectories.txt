@@ -1,0 +1,3 @@
+/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build/CMakeFiles/pokemon.dir
+/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build/CMakeFiles/edit_cache.dir
+/home/harsh/Desktop/cpp/Module_3/T3_5_Pokemon/build/CMakeFiles/rebuild_cache.dir

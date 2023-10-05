@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/. -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vehicle_register.dir/src/aircraft.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/aircraft.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/aircraft.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/. -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vehicle_register.dir/src/boat.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/boat.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/boat.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/. -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vehicle_register.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/main.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/. -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vehicle_register.dir/src/register.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/register.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/register.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/. -I/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/vehicle_register.dir/src/vehicle.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/vehicle.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/src/vehicle.cpp"
+}
+]

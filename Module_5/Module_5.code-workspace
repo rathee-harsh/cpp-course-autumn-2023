@@ -1,0 +1,70 @@
+{
+    "folders": [
+        {
+            "name": "T5.1 Vehicle register",
+            "path": "T5_1_Vehicle_register"
+        },
+        {
+            "name": "T5.2 Polynomial",
+            "path": "T5_2_Polynomial"
+        },
+        {
+            "name": "T5.3 ToString",
+            "path": "T5_3_ToString"
+        },
+        {
+            "name": "T5.4 Restricted pointer",
+            "path": "T5_4_Restricted_pointer"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "ostream": "cpp",
+            "array": "cpp",
+            "atomic": "cpp",
+            "bit": "cpp",
+            "*.tcc": "cpp",
+            "cctype": "cpp",
+            "clocale": "cpp",
+            "cmath": "cpp",
+            "compare": "cpp",
+            "concepts": "cpp",
+            "cstdarg": "cpp",
+            "cstddef": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cwchar": "cpp",
+            "cwctype": "cpp",
+            "deque": "cpp",
+            "string": "cpp",
+            "unordered_map": "cpp",
+            "vector": "cpp",
+            "exception": "cpp",
+            "algorithm": "cpp",
+            "functional": "cpp",
+            "iterator": "cpp",
+            "memory": "cpp",
+            "memory_resource": "cpp",
+            "numeric": "cpp",
+            "random": "cpp",
+            "string_view": "cpp",
+            "system_error": "cpp",
+            "tuple": "cpp",
+            "type_traits": "cpp",
+            "utility": "cpp",
+            "fstream": "cpp",
+            "initializer_list": "cpp",
+            "iosfwd": "cpp",
+            "iostream": "cpp",
+            "istream": "cpp",
+            "limits": "cpp",
+            "new": "cpp",
+            "numbers": "cpp",
+            "stdexcept": "cpp",
+            "streambuf": "cpp",
+            "typeinfo": "cpp",
+            "sstream": "cpp"
+        }
+    }
+}

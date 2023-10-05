@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build"
+			"value" : "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_4_Library"
+			"value" : "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "library"
+			"value" : "vehicle_register"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1162,7 +1162,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "library_BINARY_DIR",
+			"name" : "vehicle_register_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1171,10 +1171,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_4_Library/build"
+			"value" : "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register/build"
 		},
 		{
-			"name" : "library_IS_TOP_LEVEL",
+			"name" : "vehicle_register_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1186,7 +1186,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "library_SOURCE_DIR",
+			"name" : "vehicle_register_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1195,7 +1195,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/harsh/Desktop/cpp/Module_3/T3_4_Library"
+			"value" : "/home/harsh/Desktop/cpp/Module_5/T5_1_Vehicle_register"
 		}
 	],
 	"kind" : "cache",
