@@ -1,0 +1,9 @@
+# ninja log v5
+1	380	1696466014087180603	CMakeFiles/vehicle_register.dir/src/vehicle.cpp.o	424b51027124502a
+0	561	1696466014267179063	CMakeFiles/vehicle_register.dir/src/boat.cpp.o	a9eb4b0002266b64
+0	660	1696466055546828327	CMakeFiles/vehicle_register.dir/src/aircraft.cpp.o	6533ab2a03205545
+1	731	1696466055618827719	CMakeFiles/vehicle_register.dir/src/main.cpp.o	fbe4142c7e7856d
+1	672	1696466092282520531	CMakeFiles/vehicle_register.dir/src/aircraft.cpp.o	6533ab2a03205545
+2	823	1696466092434519266	CMakeFiles/vehicle_register.dir/src/main.cpp.o	fbe4142c7e7856d
+2	830	1696466092442519199	CMakeFiles/vehicle_register.dir/src/register.cpp.o	c1119bbf40c5af2a
+831	964	1696466092574518100	vehicle_register	dad25dfe51039d0a

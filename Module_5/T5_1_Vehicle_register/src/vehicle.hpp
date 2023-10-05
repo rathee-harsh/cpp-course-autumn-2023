@@ -1,8 +1,6 @@
 #ifndef AALTO_ELEC_CPP_VEHICLE_CLASS
 #define AALTO_ELEC_CPP_VEHICLE_CLASS
 
-#include <aircraft.hpp>
-#include <boat.hpp>
 #include <string>
 
 /**

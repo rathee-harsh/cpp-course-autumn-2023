@@ -2,12 +2,14 @@
 #define AALTO_ELEC_CPP_REGISTER_CLASS
 
 #include <fstream>
+#include <iostream>
 #include <sstream>
 #include <string>
 #include <vector>
 
+#include "aircraft.hpp"
+#include "boat.hpp"
 #include "vehicle.hpp"
-
 /**
  * @brief Class for storing and interacting with Vehicle objects.
  */
