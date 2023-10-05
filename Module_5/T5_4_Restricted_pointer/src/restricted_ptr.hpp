@@ -82,6 +82,7 @@ class RestrictedPtr {
         ++*use_count_;
       }
     }
+    return this;
   }
   T& GetData() { return *ptr_; }
   T* GetPointer() { return ptr_; }
