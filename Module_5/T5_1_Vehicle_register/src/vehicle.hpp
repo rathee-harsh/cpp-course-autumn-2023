@@ -2,6 +2,7 @@
 #define AALTO_ELEC_CPP_VEHICLE_CLASS
 
 #include <fstream>
+#include <ostream>
 #include <string>
 
 /**

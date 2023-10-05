@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <ostream>
 #include <string>
 
 #include "vehicle.hpp"
