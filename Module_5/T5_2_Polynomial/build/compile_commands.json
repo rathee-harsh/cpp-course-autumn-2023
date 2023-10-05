@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/. -I/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/polynomial.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src/main.cpp"
+},
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/. -I/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/polynomial.dir/src/poly.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src/poly.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_2_Polynomial/src/poly.cpp"
+}
+]
