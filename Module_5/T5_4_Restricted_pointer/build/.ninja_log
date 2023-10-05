@@ -1,0 +1,5 @@
+# ninja log v5
+1	516	1696533256163034687	CMakeFiles/restricted_pointer.dir/src/main.cpp.o	62038838e21c9f93
+517	644	1696533256287033826	restricted_pointer	c649010fecdc9513
+1	521	1696534143000091869	CMakeFiles/restricted_pointer.dir/src/main.cpp.o	62038838e21c9f93
+521	655	1696534143132092998	restricted_pointer	c649010fecdc9513

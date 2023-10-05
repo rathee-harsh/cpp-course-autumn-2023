@@ -1,0 +1,3 @@
+/home/harsh/Desktop/cpp/Module_4/T4_4_Birds/build/CMakeFiles/birds.dir
+/home/harsh/Desktop/cpp/Module_4/T4_4_Birds/build/CMakeFiles/edit_cache.dir
+/home/harsh/Desktop/cpp/Module_4/T4_4_Birds/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build/CMakeFiles/restricted_pointer.dir
+/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build/CMakeFiles/edit_cache.dir
+/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build/CMakeFiles/rebuild_cache.dir

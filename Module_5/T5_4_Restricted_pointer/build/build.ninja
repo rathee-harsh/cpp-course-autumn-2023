@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: mammals
+# Project: restricted_pointer
 # Configurations: Debug
 # =============================================================================
 
@@ -39,66 +39,45 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build/
+cmake_ninja_workdir = /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target mammals
+# Object build statements for EXECUTABLE target restricted_pointer
 
 
 #############################################
-# Order-only phony target for mammals
+# Order-only phony target for restricted_pointer
 
-build cmake_object_order_depends_target_mammals: phony || CMakeFiles/mammals.dir
+build cmake_object_order_depends_target_restricted_pointer: phony || CMakeFiles/restricted_pointer.dir
 
-build CMakeFiles/mammals.dir/src/cat.cpp.o: CXX_COMPILER__mammals_Debug /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/cat.cpp || cmake_object_order_depends_target_mammals
-  DEP_FILE = CMakeFiles/mammals.dir/src/cat.cpp.o.d
+build CMakeFiles/restricted_pointer.dir/src/main.cpp.o: CXX_COMPILER__restricted_pointer_Debug /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/src/main.cpp || cmake_object_order_depends_target_restricted_pointer
+  DEP_FILE = CMakeFiles/restricted_pointer.dir/src/main.cpp.o.d
   FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src
-  OBJECT_DIR = CMakeFiles/mammals.dir
-  OBJECT_FILE_DIR = CMakeFiles/mammals.dir/src
-
-build CMakeFiles/mammals.dir/src/dog.cpp.o: CXX_COMPILER__mammals_Debug /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/dog.cpp || cmake_object_order_depends_target_mammals
-  DEP_FILE = CMakeFiles/mammals.dir/src/dog.cpp.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src
-  OBJECT_DIR = CMakeFiles/mammals.dir
-  OBJECT_FILE_DIR = CMakeFiles/mammals.dir/src
-
-build CMakeFiles/mammals.dir/src/main.cpp.o: CXX_COMPILER__mammals_Debug /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/main.cpp || cmake_object_order_depends_target_mammals
-  DEP_FILE = CMakeFiles/mammals.dir/src/main.cpp.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src
-  OBJECT_DIR = CMakeFiles/mammals.dir
-  OBJECT_FILE_DIR = CMakeFiles/mammals.dir/src
-
-build CMakeFiles/mammals.dir/src/mammal.cpp.o: CXX_COMPILER__mammals_Debug /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src/mammal.cpp || cmake_object_order_depends_target_mammals
-  DEP_FILE = CMakeFiles/mammals.dir/src/mammal.cpp.o.d
-  FLAGS = -g -Wall -Wextra -pedantic -Wno-missing-field-initializers
-  INCLUDES = -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/. -I/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/src
-  OBJECT_DIR = CMakeFiles/mammals.dir
-  OBJECT_FILE_DIR = CMakeFiles/mammals.dir/src
+  INCLUDES = -I/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/. -I/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/src
+  OBJECT_DIR = CMakeFiles/restricted_pointer.dir
+  OBJECT_FILE_DIR = CMakeFiles/restricted_pointer.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mammals
+# Link build statements for EXECUTABLE target restricted_pointer
 
 
 #############################################
-# Link the executable mammals
+# Link the executable restricted_pointer
 
-build mammals: CXX_EXECUTABLE_LINKER__mammals_Debug CMakeFiles/mammals.dir/src/cat.cpp.o CMakeFiles/mammals.dir/src/dog.cpp.o CMakeFiles/mammals.dir/src/main.cpp.o CMakeFiles/mammals.dir/src/mammal.cpp.o
+build restricted_pointer: CXX_EXECUTABLE_LINKER__restricted_pointer_Debug CMakeFiles/restricted_pointer.dir/src/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/mammals.dir
+  OBJECT_DIR = CMakeFiles/restricted_pointer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = mammals
-  TARGET_PDB = mammals.dbg
+  TARGET_FILE = restricted_pointer
+  TARGET_PDB = restricted_pointer.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -109,7 +88,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals -B/home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build
+  COMMAND = cd /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build && /usr/bin/cmake --regenerate-during-build -S/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer -B/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -125,9 +104,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/harsh/Desktop/cpp/Module_4/T4_1_Mammals/build
+# Folder: /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build
 
-build all: phony mammals
+build all: phony restricted_pointer
 
 # =============================================================================
 # Built-in targets

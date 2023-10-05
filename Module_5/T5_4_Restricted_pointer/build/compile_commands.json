@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/. -I/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/restricted_pointer.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_5/T5_4_Restricted_pointer/src/main.cpp"
+}
+]
