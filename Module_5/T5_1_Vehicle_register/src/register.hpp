@@ -2,7 +2,6 @@
 #define AALTO_ELEC_CPP_REGISTER_CLASS
 
 #include <fstream>
-#include <iostream>
 #include <sstream>
 #include <string>
 #include <vector>

@@ -1,6 +1,7 @@
 #ifndef AALTO_ELEC_CPP_AIRCRAFT_CLASS
 #define AALTO_ELEC_CPP_AIRCRAFT_CLASS
 
+#include <fstream>
 #include <iostream>
 #include <string>
 

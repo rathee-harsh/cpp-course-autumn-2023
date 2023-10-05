@@ -1,6 +1,7 @@
 #ifndef AALTO_ELEC_CPP_VEHICLE_CLASS
 #define AALTO_ELEC_CPP_VEHICLE_CLASS
 
+#include <fstream>
 #include <string>
 
 /**
