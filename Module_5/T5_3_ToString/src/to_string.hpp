@@ -58,16 +58,7 @@ std::string ToString(const T& container) {
   return ToString(begin, end);
 }
 
-std::string ToString(std::string input) {
-  std::string l = "{ ";
-  for (auto& ch : input) {
-    l += ch;
-    l += ", ";
-  }
-  l = l.substr(0, l.length() - 2);
-  l += " }";
-  return l;
-}
+std::string ToString(std::string input) { return "\"" + input + "\""; }
 
 // template<>
 // std::string (Container::iterator)
