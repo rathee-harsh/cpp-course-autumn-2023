@@ -23,7 +23,7 @@ Poly& Poly::operator+=(const Poly& b) {
         values_[i->first] = i->second + j->second;
         i++;
       } else {
-        values_.insert(j->first, j->second);
+        values_.insert({j->first, j->second});
       }
     }
   } else {
