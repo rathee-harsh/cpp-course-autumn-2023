@@ -1,5 +1,6 @@
 #ifndef AALTO_ELEC_CPP_TO_STRING_CLASS
 #define AALTO_ELEC_CPP_TO_STRING_CLASS
+#include <sstream>
 #include <string>
 /* As an introduction to templates you will write and specialize a template
 function
@@ -39,7 +40,9 @@ template <typename iterator>
 std::string ToString(iterator begin, iterator end) {
   std::string l = "{ ";
   for (auto i = begin; i != end; i++) {
-    l += std::to_string(*i);
+    std::ostringstream oss;
+    oss << *i;
+    l += oss.str();
     l += ", ";
   }
   l = l.substr(0, l.length() - 2);
