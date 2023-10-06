@@ -91,8 +91,7 @@ std::ostream& operator<<(std::ostream& os, const Poly& p) {
 std::istream& operator>>(std::istream& is, Poly& p) {
   for (auto i = p.begin(); i != p.end(); i++) {
     p[i->first] = 0;
-  }  // Clear any previous data
-
+  }
   std::string expression;
   is >> expression;
 
@@ -102,42 +101,33 @@ std::istream& operator>>(std::istream& is, Poly& p) {
   while (std::getline(iss, term, '+')) {
     std::istringstream termStream(term);
     int c = 0, e = 0;
-    bool negative = false;
 
     while (std::getline(termStream, term, '-')) {
       if (!term.empty()) {
-        if (term == "-") {
-          negative = true;
+        size_t x_pos = term.find('x');
+
+        if (x_pos != std::string::npos) {
+          std::string coe_str = term.substr(0, x_pos);
+          c = (coe_str.empty() || coe_str == "-") ? (coe_str == "-" ? -1 : 1)
+                                                  : stoi(coe_str);
+
+          std::string exp_str = term.substr(x_pos + 1);
+          e = (exp_str.empty() || exp_str == "-") ? (exp_str == "-" ? -1 : 1)
+                                                  : stoi(exp_str);
         } else {
-          size_t x_pos = term.find('x');
-
-          if (x_pos != std::string::npos) {
-            std::string coe_str = term.substr(0, x_pos);
-            c = (coe_str.empty() || coe_str == "-") ? (coe_str == "-" ? -1 : 1)
-                                                    : stoi(coe_str);
-
-            std::string exp_str = term.substr(x_pos + 1);
-            e = (exp_str.empty() || exp_str == "-") ? (exp_str == "-" ? -1 : 1)
-                                                    : stoi(exp_str);
-          } else {
-            // If there's no 'x', it's a constant term (x^0)
-            c = stoi(term);
-            e = 0;
-          }
-
-          if (negative) {
-            c = -c;
-            negative = false;
-          }
-
-          p[e] += c;
+          // If there's no 'x', it's a constant term (x^0)
+          c = stoi(term);
+          e = 0;
         }
+
+        p[e] += c;
       }
     }
   }
 
   return is;
 }
+
 // while (std::getline(iss, termStr, '+')) {
 //   std::istringstream termStream(termStr);
 //   std::string token;
