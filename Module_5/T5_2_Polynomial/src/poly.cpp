@@ -126,7 +126,7 @@ std::istream& operator>>(std::istream& is, Poly& p) {
           negative = false;
         }
 
-        p[e] += c;
+        p.terms[e] += c;
       }
       if (termStream.peek() == '-') {
         termStream.ignore();
