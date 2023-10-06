@@ -101,6 +101,7 @@ std::istream& operator>>(std::istream& is, Poly& p) {
   while (std::getline(iss, term, '+')) {
     std::istringstream termStream(term);
     int c = 0, e = 0;
+    bool negative = false;
 
     while (std::getline(termStream, term, '-')) {
       if (!term.empty()) {
@@ -120,7 +121,16 @@ std::istream& operator>>(std::istream& is, Poly& p) {
           e = 0;
         }
 
+        if (negative) {
+          c = -c;
+          negative = false;
+        }
+
         p[e] += c;
+      }
+      if (termStream.peek() == '-') {
+        termStream.ignore();
+        negative = true;
       }
     }
   }
