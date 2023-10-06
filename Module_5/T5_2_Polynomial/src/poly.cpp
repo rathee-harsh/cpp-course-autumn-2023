@@ -87,35 +87,55 @@ std::ostream& operator<<(std::ostream& os, const Poly& p) {
   }
   return os;
 }
+
 std::istream& operator>>(std::istream& is, Poly& p) {
   for (auto i = p.begin(); i != p.end(); i++) {
     p[i->first] = 0;
   }  // Clear any previous data
+  std::string expression;
+  is >> expression;
 
-  std::string l;
-  is >> l;
-  std::istringstream iss(l);
+  // Split the expression into terms using '+' and '-'
+  std::istringstream iss(expression);
+  std::string term;
+  char sign = '+';
 
-  std::string line;
-  while (std::getline(iss, line, '+')) {
+  while (std::getline(iss, term, '+')) {
+    std::istringstream termStream(term);
     int c = 0, e = 0;
-    size_t x_pos = line.find('x');
 
-    if (x_pos != std::string::npos) {
-      std::string coe_str = line.substr(0, x_pos);
-      c = (coe_str.empty() || coe_str == "-") ? (coe_str == "-" ? -1 : 1)
-                                              : stoi(coe_str);
+    while (std::getline(termStream, term, '-')) {
+      if (!term.empty()) {
+        size_t x_pos = term.find('x');
 
-      std::string exp_str = line.substr(x_pos + 1);
-      e = (exp_str.empty() || exp_str == "-") ? (exp_str == "-" ? -1 : 1)
-                                              : stoi(exp_str);
-    } else {
-      // If there's no 'x', it's a constant term (x^0)
-      c = stoi(line);
-      e = 0;
+        if (x_pos != std::string::npos) {
+          std::string coe_str = term.substr(0, x_pos);
+          c = (coe_str.empty() || coe_str == "-") ? (coe_str == "-" ? -1 : 1)
+                                                  : stoi(coe_str);
+
+          std::string exp_str = term.substr(x_pos + 1);
+          e = (exp_str.empty() || exp_str == "-") ? (exp_str == "-" ? -1 : 1)
+                                                  : stoi(exp_str);
+        } else {
+          // If there's no 'x', it's a constant term (x^0)
+          c = stoi(term);
+          e = 0;
+        }
+
+        if (sign == '+') {
+          p[e] += c;
+        } else {
+          p[e] -= c;
+        }
+      }
     }
 
-    p[e] += c;
+    // Set the sign for the next term
+    if (!term.empty() && term.back() == '-') {
+      sign = '-';
+    } else {
+      sign = '+';
+    }
   }
 
   return is;
