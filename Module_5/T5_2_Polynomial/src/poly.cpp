@@ -88,12 +88,13 @@ std::ostream& operator<<(std::ostream& os, const Poly& p) {
   return os;
 }
 std::istream& operator>>(std::istream& is, Poly& p) {
+  for (auto i = p.begin(); i != p.end(); i++) {
+    p[i->first] = 0;
+  }  // Clear any previous data
+
   std::string l;
   is >> l;
   std::istringstream iss(l);
-  for (auto i = p.begin(); i != p.end(); i++) {
-    p[i->first] = 0;
-  }
 
   std::string line;
   while (std::getline(iss, line, '+')) {
@@ -102,49 +103,47 @@ std::istream& operator>>(std::istream& is, Poly& p) {
 
     if (x_pos != std::string::npos) {
       std::string coe_str = line.substr(0, x_pos);
-      c = (coe_str.empty()
-               ? 1
-               : stoi(
-                     coe_str));  // Default coefficient to 1 if none is provided
+      c = (coe_str.empty() || coe_str == "-") ? (coe_str == "-" ? -1 : 1)
+                                              : stoi(coe_str);
+
       std::string exp_str = line.substr(x_pos + 1);
-      e = (exp_str.empty()
-               ? 1
-               : stoi(exp_str));  // Default exponent to 1 if none is provided
+      e = (exp_str.empty() || exp_str == "-") ? (exp_str == "-" ? -1 : 1)
+                                              : stoi(exp_str);
     } else {
       // If there's no 'x', it's a constant term (x^0)
       c = stoi(line);
       e = 0;
     }
 
-    // Sum coefficients for the same exponent
     p[e] += c;
   }
-  return is;
-  // while (std::getline(iss, termStr, '+')) {
-  //   std::istringstream termStream(termStr);
-  //   std::string token;
-  //   int c, e;
-  //   while (std::getline(termStream, token, '-')) {
-  //     size_t x_pos = token.find('x');
-  //     if (x_pos != std::string::npos) {
-  //       c = std::stoi(token.substr(0, x_pos));
-  //       size_t exp_pos = x_pos + 1;
-  //       if (exp_pos < token.length() && token[exp_pos] == '-') {
-  //         e = -std::stoi(token.substr(exp_pos + 1));
-  //       } else {
-  //         e = (exp_pos < token.length()) ? std::stoi(token.substr(exp_pos)) :
-  //         1;
-  //       }
-  //     } else {
-  //       c = std::stoi(token);
-  //       e = 0;
-  //     }
 
-  //     terms.push_back(term);
-  //   }
-  // }
-  // return is;
+  return is;
 }
+// while (std::getline(iss, termStr, '+')) {
+//   std::istringstream termStream(termStr);
+//   std::string token;
+//   int c, e;
+//   while (std::getline(termStream, token, '-')) {
+//     size_t x_pos = token.find('x');
+//     if (x_pos != std::string::npos) {
+//       c = std::stoi(token.substr(0, x_pos));
+//       size_t exp_pos = x_pos + 1;
+//       if (exp_pos < token.length() && token[exp_pos] == '-') {
+//         e = -std::stoi(token.substr(exp_pos + 1));
+//       } else {
+//         e = (exp_pos < token.length()) ? std::stoi(token.substr(exp_pos)) :
+//         1;
+//       }
+//     } else {
+//       c = std::stoi(token);
+//       e = 0;
+//     }
+
+//     terms.push_back(term);
+//   }
+// }
+// return is;
 
 // while (!is.eof()) {
 //   // read a line from file, output it to screen
