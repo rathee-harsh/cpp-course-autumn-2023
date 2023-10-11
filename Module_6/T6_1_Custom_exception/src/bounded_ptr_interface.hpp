@@ -44,8 +44,9 @@ using MyMemoryAllocator::BoundedPtr;
  * \return BoundedPtr<T> Bounded smart pointer object
  */
 template <typename T>
-BoundedPtr<T> &MakeBounded(T *ptr) {
-  return *(new BoundedPtr(ptr, "BoundedPtr instance"));
+BoundedPtr<T> MakeBounded(T *ptr) {
+  BoundedPtr p(ptr, "BoundedPtr instance");
+  return p;
 }
 /**
  * \brief Creates a copy of a BoundedPointer object
@@ -55,8 +56,10 @@ BoundedPtr<T> &MakeBounded(T *ptr) {
  * \return A copy of the argument object
  */
 template <typename T>
-BoundedPtr<T> &CopyBounded(BoundedPtr<T> &p) {
-  return *(new BoundedPtr(p.GetPointer(), "A bounded ptr"));
+BoundedPtr<T> CopyBounded(BoundedPtr<T> &bp) {
+  T *new_ptr = new T(*bp.GetPointer());
+  BoundedPtr p(new_ptr, "A bounded ptr");
+  return p;
 }
 /**
  * \brief Outputs the data of a BoundedPtr object into the specfied output
