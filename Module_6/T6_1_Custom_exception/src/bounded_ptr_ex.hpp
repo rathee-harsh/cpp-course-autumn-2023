@@ -44,6 +44,7 @@
 
 #include <exception>
 #include <string>
+
 namespace MyMemoryAllocator {
 class BoundedPtrException : public std::exception {
  public:

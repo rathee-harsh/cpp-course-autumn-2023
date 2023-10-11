@@ -56,7 +56,7 @@ class BoundedPtr {
    */
   BoundedPtr(const BoundedPtr<T> &bounded_ptr) {
     if (*bounded_ptr.ref_count_ == 3) {
-      throw BoundedCopyException();
+      throw BoundedCopyException(use_);
     } else {
       raw_pointer_ = bounded_ptr.raw_pointer_;
       ref_count_ = bounded_ptr.ref_count_;
@@ -80,7 +80,7 @@ class BoundedPtr {
   BoundedPtr<T> &operator=(const BoundedPtr<T> &bounded_ptr) {
     if (ref_count_ == nullptr) {
       if (*bounded_ptr.ref_count_ == 3) {
-        throw BoundedCopyException();
+        throw BoundedCopyException(use_);
       } else {
         raw_pointer_ = bounded_ptr.raw_pointer_;
         ref_count_ = bounded_ptr.ref_count_;
@@ -94,7 +94,7 @@ class BoundedPtr {
       }
 
       if (*bounded_ptr.ref_count_ == 3) {
-        throw BoundedCopyException();
+        throw BoundedCopyException(use_);
       } else {
         raw_pointer_ = bounded_ptr.raw_pointer_;
         ref_count_ = bounded_ptr.ref_count_;
@@ -108,7 +108,7 @@ class BoundedPtr {
   // this is given as a reference, so it can be modified
   T &GetData() {
     if (raw_pointer_ == nullptr) {
-      throw BoundedNullException();
+      throw BoundedNullException(use_);
     }
     return *raw_pointer_;
   }

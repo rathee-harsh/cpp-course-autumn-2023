@@ -1,33 +1,36 @@
-#include "bounded_ptr_ex.hpp"
-#include "bounded_ptr_interface.hpp"
 #include <iostream>
 
-int main(void)
-{
-    int *tester = new int;
+#include "bounded_ptr_ex.hpp"
+#include "bounded_ptr_interface.hpp"
 
-    *tester = 6;
+int main(void) {
+  int *tester = new int;
 
-    MyMemoryAllocator::BoundedPtr<int> testi_ptr = MakeBounded(tester);
+  *tester = 6;
 
-    MyMemoryAllocator::BoundedPtr<int> testi_ptr2 = CopyBounded(testi_ptr);
+  MyMemoryAllocator::BoundedPtr<int> testi_ptr = MakeBounded(tester);
 
-    std::cout << "Next should print 6" << std::endl;
-    std::cout << testi_ptr2.GetData() << std::endl;
+  MyMemoryAllocator::BoundedPtr<int> testi_ptr2 = CopyBounded(testi_ptr);
 
-    MyMemoryAllocator::BoundedPtr<int> testi_ptr3 = CopyBounded(testi_ptr);
+  std::cout << "Next should print 6" << std::endl;
+  std::cout << testi_ptr2.GetData() << std::endl;
 
-    std::cout << "next should fail and print out: BoundedPtr instance: Too many copies of BoundedPtr!" << std::endl;
+  MyMemoryAllocator::BoundedPtr<int> testi_ptr3 = CopyBounded(testi_ptr);
 
-    MyMemoryAllocator::BoundedPtr<int> testi_ptr4 = CopyBounded(testi_ptr);
+  std::cout << "next should fail and print out: BoundedPtr instance: Too many "
+               "copies of BoundedPtr!"
+            << std::endl;
 
-    // calling GetData with this null_ptr instance should throw a
-    // BoundedNullException
-    MyMemoryAllocator::BoundedPtr<int> null_ptr(nullptr, "nullptr instance");
+  MyMemoryAllocator::BoundedPtr<int> testi_ptr4 = CopyBounded(testi_ptr);
 
-    std::cout << "This should print out: nullptr instance: nullptr exception!" << std::endl;
+  // calling GetData with this null_ptr instance should throw a
+  // BoundedNullException
+  MyMemoryAllocator::BoundedPtr<int> null_ptr(nullptr, "nullptr instance");
 
-    std::cout << null_ptr;
+  std::cout << "This should print out: nullptr instance: nullptr exception!"
+            << std::endl;
 
-    return 0;
+  std::cout << null_ptr;
+
+  return 0;
 }
