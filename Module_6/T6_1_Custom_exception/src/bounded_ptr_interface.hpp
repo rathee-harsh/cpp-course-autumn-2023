@@ -57,8 +57,7 @@ BoundedPtr<T> MakeBounded(T *ptr) {
  */
 template <typename T>
 BoundedPtr<T> CopyBounded(BoundedPtr<T> &bp) {
-  T *new_ptr = new T(*bp.GetPointer());
-  BoundedPtr p(new_ptr, "A bounded ptr");
+  BoundedPtr p(bp);
   return p;
 }
 /**

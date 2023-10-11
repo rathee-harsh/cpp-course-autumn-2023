@@ -1,5 +1,5 @@
 # ninja log v5
-1	206	1697014022442114556	CMakeFiles/custom_exception.dir/src/main.cpp.o	12f88b72bf5be075
-206	276	1697014022510114334	custom_exception	6a36b6e67d1cfdb6
-0	186	1697014132565742921	CMakeFiles/custom_exception.dir/src/main.cpp.o	12f88b72bf5be075
-186	225	1697014132605742782	custom_exception	6a36b6e67d1cfdb6
+0	162	1697015091676676055	CMakeFiles/custom_exception.dir/src/main.cpp.o	12f88b72bf5be075
+163	204	1697015091716676824	custom_exception	6a36b6e67d1cfdb6
+0	186	1697015235251182262	CMakeFiles/custom_exception.dir/src/main.cpp.o	12f88b72bf5be075
+186	233	1697015235299183023	custom_exception	6a36b6e67d1cfdb6
