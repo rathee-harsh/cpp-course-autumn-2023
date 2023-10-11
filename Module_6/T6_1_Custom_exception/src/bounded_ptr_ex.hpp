@@ -51,7 +51,7 @@ class BoundedPtrException : public std::exception {
   virtual const std::string& GetError() const = 0;
   const std::string& GetUse() const { return use_; }
 
- private:
+ protected:
   std::string use_;
 };
 
@@ -59,8 +59,7 @@ class BoundedCopyException : public BoundedPtrException {
  public:
   BoundedCopyException(const std::string& use_) : BoundedPtrException(use_) {}
   virtual const std::string& GetError() const {
-    std::string e = GetUse() + ": Too many copies of BoundedPtr!";
-    return e;
+    return (use_ + ": Too many copies of BoundedPtr!");
   }
 };
 
@@ -68,8 +67,7 @@ class BoundedNullException : public BoundedPtrException {
  public:
   BoundedNullException(const std::string& use_) : BoundedPtrException(use_) {}
   virtual const std::string& GetError() const {
-    std::string e = GetUse() + ": nullptr exception!";
-    return e;
+    return (use_ + ": nullptr exception!");
   }
 };
 

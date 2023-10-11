@@ -55,7 +55,7 @@ class BoundedPtr {
    * \param bounded_ptr the source object to be copied into this one
    */
   BoundedPtr(const BoundedPtr<T> &bounded_ptr) {
-    if (*bounded_ptr.use_count_ == 3) {
+    if (*bounded_ptr.ref_count_ == 3) {
       throw BoundedCopyException();
     } else {
       raw_pointer_ = bounded_ptr.raw_pointer_;
