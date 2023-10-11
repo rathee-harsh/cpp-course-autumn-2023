@@ -90,7 +90,7 @@ class BoundedPtr {
       --*ref_count_;
       if (*ref_count_ == 0) {
         delete ref_count_;
-        delete ptr;
+        delete raw_pointer_;
       }
 
       if (*bounded_ptr.ref_count_ == 3) {
@@ -110,7 +110,7 @@ class BoundedPtr {
     if (raw_pointer_ == nullptr) {
       throw BoundedNullException();
     }
-    return *ptr_;
+    return *raw_pointer_;
   }
 
   // member function to get the pointer address
