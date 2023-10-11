@@ -55,7 +55,7 @@ class BoundedPtr {
    * \param bounded_ptr the source object to be copied into this one
    */
   BoundedPtr(const BoundedPtr<T> &bounded_ptr) {
-    if (*bounded_ptr.ref_count_ == 3) {
+    if (*bounded_ptr.ref_count_ == kMaxReferenceCount) {
       throw BoundedCopyException(use_);
     } else {
       raw_pointer_ = bounded_ptr.raw_pointer_;
@@ -79,11 +79,12 @@ class BoundedPtr {
   // copy assignment
   BoundedPtr<T> &operator=(const BoundedPtr<T> &bounded_ptr) {
     if (ref_count_ == nullptr) {
-      if (*bounded_ptr.ref_count_ == 3) {
+      if (*bounded_ptr.ref_count_ == kMaxReferenceCount) {
         throw BoundedCopyException(use_);
       } else {
         raw_pointer_ = bounded_ptr.raw_pointer_;
         ref_count_ = bounded_ptr.ref_count_;
+        use_ = bounded_ptr.use_;
         ++*ref_count_;
       }
     } else {
@@ -93,11 +94,13 @@ class BoundedPtr {
         delete raw_pointer_;
       }
 
-      if (*bounded_ptr.ref_count_ == 3) {
+      if (*bounded_ptr.ref_count_ == kMaxReferenceCount) {
         throw BoundedCopyException(use_);
       } else {
         raw_pointer_ = bounded_ptr.raw_pointer_;
         ref_count_ = bounded_ptr.ref_count_;
+        use_ = bounded_ptr.use_;
+
         ++*ref_count_;
       }
     }
