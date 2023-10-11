@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/harsh/Desktop/cpp/Module_6/T6_1_Custom_exception/build",
+  "command": "/usr/bin/g++ -I/home/harsh/Desktop/cpp/Module_6/T6_1_Custom_exception/. -I/home/harsh/Desktop/cpp/Module_6/T6_1_Custom_exception/src -g -Wall -Wextra -pedantic -Wno-missing-field-initializers -o CMakeFiles/custom_exception.dir/src/main.cpp.o -c /home/harsh/Desktop/cpp/Module_6/T6_1_Custom_exception/src/main.cpp",
+  "file": "/home/harsh/Desktop/cpp/Module_6/T6_1_Custom_exception/src/main.cpp"
+}
+]
