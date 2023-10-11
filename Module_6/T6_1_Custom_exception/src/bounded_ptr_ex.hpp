@@ -48,7 +48,7 @@ namespace MyMemoryAllocator {
 class BoundedPtrException : public std::exception {
  public:
   BoundedPtrException(const std::string& use) : use_(use) {}
-  virtual const std::string& GetError() const = 0;
+  virtual const std::string GetError() const = 0;
   const std::string& GetUse() const { return use_; }
 
  protected:
@@ -58,7 +58,7 @@ class BoundedPtrException : public std::exception {
 class BoundedCopyException : public BoundedPtrException {
  public:
   BoundedCopyException(const std::string& use_) : BoundedPtrException(use_) {}
-  virtual const std::string& GetError() const {
+  virtual const std::string GetError() const {
     return (use_ + ": Too many copies of BoundedPtr!");
   }
 };
@@ -66,7 +66,7 @@ class BoundedCopyException : public BoundedPtrException {
 class BoundedNullException : public BoundedPtrException {
  public:
   BoundedNullException(const std::string& use_) : BoundedPtrException(use_) {}
-  virtual const std::string& GetError() const {
+  virtual const std::string GetError() const {
     return (use_ + ": nullptr exception!");
   }
 };
